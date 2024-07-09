@@ -1,0 +1,309 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homeFragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+                        <!-- Section One <<<<<<<<<<<<<<<<<<< -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginVertical="0dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/idHomeHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Background Image -->
+                <ImageView
+                    android:id="@+id/idHomeImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/homepic"
+                    android:contentDescription="Hero Image"
+                    app:layout_constraintTop_toTopOf="@+id/idHomeHeader"
+                    app:layout_constraintBottom_toBottomOf="@+id/idHomeHeader"
+                    app:layout_constraintStart_toStartOf="@+id/idHomeHeader"
+                    app:layout_constraintEnd_toEndOf="@+id/idHomeHeader" />
+                <!-- Dark Overlay -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="#80000000"
+                    app:layout_constraintTop_toTopOf="@+id/idHomeImage"
+                    app:layout_constraintBottom_toBottomOf="@+id/idHomeImage"
+                    app:layout_constraintStart_toStartOf="@+id/idHomeImage"
+                    app:layout_constraintEnd_toEndOf="@+id/idHomeImage" />
+                <!-- Logo Image -->
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="Logo"
+                    android:src="@drawable/gym_weight"
+                    app:layout_constraintStart_toStartOf="@+id/idHomeImage"
+                    app:layout_constraintTop_toTopOf="@+id/idHomeImage"
+                    android:layout_marginStart="15dp"/>
+                <!-- Text Overlay -->
+                <TextView
+                    android:id="@+id/idAppName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_roboto"
+                    android:text="@string/stay_healthy"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/idSarajevo"
+                    app:layout_constraintEnd_toEndOf="@+id/idHomeImage"
+                    android:layout_marginBottom="16dp" />
+                <TextView
+                    android:id="@+id/idSarajevo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_roboto"
+                    android:text="Sarajevo"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/idHomeImage"
+                    app:layout_constraintEnd_toEndOf="@+id/idAppName"
+                    android:layout_marginBottom="16dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <!-- Text hero -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_roboto"
+            android:textColor="@color/black"
+            android:text="@string/text_1"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            />
+
+                    <!-- Section Two <<<<<<<<<<<<<<<<<<< -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_marginVertical="20dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/idSection2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Background Image -->
+                <ImageView
+                    android:id="@+id/idSection2Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/section2"
+                    android:contentDescription="Section two iamge"
+                    app:layout_constraintTop_toTopOf="@+id/idSection2"
+                    app:layout_constraintBottom_toBottomOf="@+id/idSection2"
+                    app:layout_constraintStart_toStartOf="@+id/idSection2"
+                    app:layout_constraintEnd_toEndOf="@+id/idSection2" />
+                <!-- Dark Overlay -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="#80000000"
+                    app:layout_constraintTop_toTopOf="@+id/idSection2Image"
+                    app:layout_constraintBottom_toBottomOf="@+id/idSection2Image"
+                    app:layout_constraintStart_toStartOf="@+id/idSection2Image"
+                    app:layout_constraintEnd_toEndOf="@+id/idSection2Image" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <!-- Text Section Two -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_roboto"
+            android:textColor="@color/black"
+            android:text="@string/text_2"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            />
+                        <!-- Section Three <<<<<<<<<<<<<<<<<<< -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_marginVertical="20dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/idSection3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!-- Background Image -->
+                <ImageView
+                    android:id="@+id/idSection3Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/section3"
+                    android:contentDescription="Section three image"
+                    app:layout_constraintTop_toTopOf="@+id/idSection3"
+                    app:layout_constraintBottom_toBottomOf="@+id/idSection3"
+                    app:layout_constraintStart_toStartOf="@+id/idSection3"
+                    app:layout_constraintEnd_toEndOf="@+id/idSection3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <!-- Text Section Three -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_roboto"
+            android:textColor="@color/black"
+            android:text="@string/text_3"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            />
+        <!-- Section Four <<<<<<<<<<<<<<<<<<< -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_marginVertical="20dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/idSection4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!-- Background Image -->
+                <ImageView
+                    android:id="@+id/idSection4Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/section4"
+                    android:contentDescription="Section four image"
+                    app:layout_constraintTop_toTopOf="@+id/idSection4"
+                    app:layout_constraintBottom_toBottomOf="@+id/idSection4"
+                    app:layout_constraintStart_toStartOf="@+id/idSection4"
+                    app:layout_constraintEnd_toEndOf="@+id/idSection4" />
+                <!-- Dark Overlay -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="#80000000"
+                    app:layout_constraintTop_toTopOf="@+id/idSection4Image"
+                    app:layout_constraintBottom_toBottomOf="@+id/idSection4Image"
+                    app:layout_constraintStart_toStartOf="@+id/idSection4Image"
+                    app:layout_constraintEnd_toEndOf="@+id/idSection4Image" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <!-- Text Section Four -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_roboto"
+            android:textColor="@color/black"
+            android:text="@string/text_4"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            />
+        <!-- Section Five <<<<<<<<<<<<<<<<<<< -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_marginVertical="20dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/idSection5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!-- Background Image -->
+                <ImageView
+                    android:id="@+id/idSection5Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/section5"
+                    android:contentDescription="Section four image"
+                    app:layout_constraintTop_toTopOf="@+id/idSection5"
+                    app:layout_constraintBottom_toBottomOf="@+id/idSection5"
+                    app:layout_constraintStart_toStartOf="@+id/idSection5"
+                    app:layout_constraintEnd_toEndOf="@+id/idSection5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <!-- Text Section Five -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_roboto"
+            android:textColor="@color/black"
+            android:text="@string/text_5"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            />
+        <!-- Section Six <<<<<<<<<<<<<<<<<<< -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_marginVertical="20dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/idSection6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!-- Background Image -->
+                <ImageView
+                    android:id="@+id/idSection6Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/bottompic"
+                    android:contentDescription="Section four image"
+                    app:layout_constraintTop_toTopOf="@+id/idSection6"
+                    app:layout_constraintBottom_toBottomOf="@+id/idSection6"
+                    app:layout_constraintStart_toStartOf="@+id/idSection6"
+                    app:layout_constraintEnd_toEndOf="@+id/idSection6" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <!-- Text Section Six -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_roboto"
+            android:textColor="@color/black"
+            android:text="@string/text_6"
+            android:textSize="22sp"
+            android:layout_margin="10dp"
+            />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_nav_menu"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

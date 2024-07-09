@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Card one  <<<<<<<<<<<<<<<<<<< -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="25dp"
+    android:layout_marginVertical="20dp"
+    android:layout_marginHorizontal="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/idCard1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Background Image -->
+        <ImageView
+            android:id="@+id/idCardImage1"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/gym1_all4sport"
+            android:contentDescription="Section two iamge"
+            app:layout_constraintTop_toTopOf="@+id/idCard1"
+            app:layout_constraintStart_toStartOf="@+id/idCard1"
+            app:layout_constraintEnd_toEndOf="@+id/idCard1"
+            app:layout_constraintBottom_toTopOf="@id/idCardText1"/>
+
+        <!-- Card body One -->
+        <TextView
+            android:id="@+id/idCardText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_roboto"
+            android:textColor="@color/black"
+            android:text="ALL4SPORT Fitness"
+            android:textSize="25sp"
+            android:layout_margin="10dp"
+            android:paddingBottom="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/idCardImage1"
+            app:layout_constraintStart_toStartOf="@+id/idCardImage1"
+            app:layout_constraintEnd_toEndOf="@+id/idCardImage1"
+            />
+        <Button
+            android:id="@+id/idCardButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/idCardText1"
+            app:layout_constraintStart_toStartOf="@+id/idCardText1"
+            app:layout_constraintEnd_toEndOf="@+id/idCardText1"
+            android:text="@string/location"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
